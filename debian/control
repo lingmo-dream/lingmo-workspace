@@ -275,9 +275,35 @@ Description: Lingmo OS Workspace for KF5
  support for Lingmo OS Widgets, integrated search,
  hardware management and a high degree of customizability.
 
+Package: plasma-workspace
+Architecture: any
+Depends: lingmo-workspace (= ${binary:Version}),
+         ${misc:Depends},
+Description: Lingmo OS Workspace for KF5
+Lingmo OS Workspace for KF5. Workspaces provide
+support for Lingmo OS Widgets, integrated search,
+hardware management and a high degree of customizability.
+
 Package: lingmo-workspace-data
 Architecture: all
 Depends: ${misc:Depends},
+Breaks: breeze (<< 4:5.23.90~),
+        plasma-desktop (<< 4:5.24.0),
+        plasma-desktop-data (<< 4:5.27.0),
+Replaces: breeze (<< 4:5.23.90~),
+          plasma-desktop (<< 4:5.24.0),
+          plasma-desktop-data (<< 4:5.27.0),
+Description: Lingmo OS Workspace for KF5 - data files
+ Lingmo OS Workspace for KF5. Workspaces provide
+ support for Lingmo OS Widgets, integrated search,
+ hardware management and a high degree of customizability.
+ .
+ This contains the data files for the Plasma workspace.
+
+Package: plasma-workspace-data
+Architecture: all
+Depends: lingmo-workspace-data (= ${binary:Version}),
+         ${misc:Depends},
 Breaks: breeze (<< 4:5.23.90~),
         plasma-desktop (<< 4:5.24.0),
         plasma-desktop-data (<< 4:5.27.0),
@@ -312,6 +338,21 @@ Description: Lingmo OS Workspace for KF5 devel files
  .
  This package contains the development files.
 
+Package: plasma-workspace-dev
+Architecture: any
+Section: libdevel
+Depends: lingmo-workspace-dev (= ${binary:Version}),
+         ${misc:Depends},
+         ${so:Depends},
+Breaks: plasma-desktop-dev (<< 4:5.20),
+Replaces: plasma-desktop-dev (<< 4:5.20),
+Description: Lingmo OS Workspace for KF5 devel files
+ Lingmo OS Workspace for KF5. Workspaces provide
+ support for Lingmo OS Widgets, integrated search,
+ hardware management and a high degree of customizability.
+ .
+ This package contains the development files.
+
 Package: lingmo-workspace-wayland
 Architecture: any
 Depends: kwayland-integration (>= 5.27.5~),
@@ -327,33 +368,14 @@ Description: Lingmo OS Workspace for KF5 - Wayland integration
  .
  This package contains the Wayland session.
 
-Package: sddm-theme-breeze
+Package: plasma-workspace-wayland
 Architecture: any
-Depends: plasma-framework, lingmo-workspace, ${misc:Depends}, ${shlibs:Depends},
-Recommends: sddm,
-Provides: sddm-theme,
-Description: Breeze SDDM theme
- Lingmo OS Workspace for KF5. Workspaces provide
- support for Lingmo OS Widgets, integrated search,
- hardware management and a high degree of customizability.
- Taskmanager library.
- .
- This package contains the files for the breeze SDDM theme.
-
-Package: sddm-theme-lingmo-breeze
-Architecture: any
-Depends: plasma-framework,
-         lingmo-workspace,
-         sddm-theme-breeze,
+Depends: lingmo-workspace-wayland (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: desktop-base (>= 9.0.0~), sddm,
-Provides: sddm-theme,
-Description: Debian Breeze SDDM theme
+Description: Lingmo OS Workspace for KF5 - Wayland integration
  Lingmo OS Workspace for KF5. Workspaces provide
  support for Lingmo OS Widgets, integrated search,
  hardware management and a high degree of customizability.
- Taskmanager library.
  .
- This package contains the files for the breeze SDDM theme adapted
- to use the active desktop-base theme for the background.
+ This package contains the Wayland session.
