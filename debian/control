@@ -280,9 +280,9 @@ Architecture: any
 Depends: lingmo-workspace (= ${binary:Version}),
          ${misc:Depends},
 Description: Lingmo OS Workspace for KF5
-Lingmo OS Workspace for KF5. Workspaces provide
-support for Lingmo OS Widgets, integrated search,
-hardware management and a high degree of customizability.
+ Lingmo OS Workspace for KF5. Workspaces provide
+ support for Lingmo OS Widgets, integrated search,
+ hardware management and a high degree of customizability.
 
 Package: lingmo-workspace-data
 Architecture: all
