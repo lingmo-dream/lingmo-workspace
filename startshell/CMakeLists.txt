@@ -29,16 +29,16 @@ target_link_libraries(startplasma PUBLIC
 )
 
 add_executable(startlingmo-x11 ${START_PLASMA_COMMON_SRCS} startlingmo-x11.cpp kcheckrunning/kcheckrunning.cpp)
-add_executable(startlingmo-wayland ${START_PLASMA_COMMON_SRCS} startlingmo-wayland.cpp)
+# add_executable(startlingmo-wayland ${START_PLASMA_COMMON_SRCS} startlingmo-wayland.cpp)
 
 target_link_libraries(startlingmo-x11 PRIVATE
     startplasma
     X11::X11 # for kcheckrunning
 )
 
-target_link_libraries(startlingmo-wayland PRIVATE
-    startplasma
-)
+# target_link_libraries(startlingmo-wayland PRIVATE
+#     startplasma
+# )
 
 add_subdirectory(lingmo-session)
 # add_subdirectory(lingmo-shutdown)
@@ -52,6 +52,6 @@ endif()
 configure_file(config-startplasma.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-startplasma.h)
 
 install(TARGETS startlingmo-x11 ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(TARGETS startlingmo-wayland ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+# install(TARGETS startlingmo-wayland ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS lingmo-sourceenv.sh DESTINATION ${KDE_INSTALL_LIBEXECDIR})
 install(PROGRAMS lingmo-dbus-run-session-if-needed DESTINATION ${KDE_INSTALL_LIBEXECDIR})
