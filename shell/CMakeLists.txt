@@ -132,7 +132,7 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.lingmo.lingmoshell.desktop DESTINA
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.lingmo.lingmoshell.desktop DESTINATION ${KDE_INSTALL_AUTOSTARTDIR})
 install( FILES dbus/org.kde.PlasmaShell.xml DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR} )
 
-ecm_install_configured_files(INPUT lingmo-plasmashell.service.in @ONLY DESTINATION  ${KDE_INSTALL_SYSTEMDUSERUNITDIR})
+ecm_install_configured_files(INPUT lingmo-startshell.service.in @ONLY DESTINATION  ${KDE_INSTALL_SYSTEMDUSERUNITDIR})
 
 install(FILES
    scripting/lingmo-layouttemplate.desktop

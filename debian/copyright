@@ -517,17 +517,17 @@ Files: applets/systemtray/statusnotifieritemjob.cpp
        solidautoeject/solidautoeject.h
        soliduiserver/soliduiserver.cpp
        soliduiserver/soliduiserver.h
-       startkde/lingmo-session/autostart.cpp
-       startkde/lingmo-session/autostart.h
-       startkde/lingmo-session/main.cpp
-       startkde/lingmo-session/sessiontrack.cpp
-       startkde/lingmo-session/sessiontrack.h
-       startkde/lingmo-session/signalhandler.cpp
-       startkde/lingmo-session/signalhandler.h
-       startkde/lingmo-shutdown/main.cpp
-       startkde/waitforname/main.cpp
-       startkde/waitforname/waiter.cpp
-       startkde/waitforname/waiter.h
+       startshell/lingmo-session/autostart.cpp
+       startshell/lingmo-session/autostart.h
+       startshell/lingmo-session/main.cpp
+       startshell/lingmo-session/sessiontrack.cpp
+       startshell/lingmo-session/sessiontrack.h
+       startshell/lingmo-session/signalhandler.cpp
+       startshell/lingmo-session/signalhandler.h
+       startshell/lingmo-shutdown/main.cpp
+       startshell/waitforname/main.cpp
+       startshell/waitforname/waiter.cpp
+       startshell/waitforname/waiter.h
        systemmonitor/kdedksysguard.cpp
        systemmonitor/ksystemactivitydialog.cpp
        systemmonitor/ksystemactivitydialog.h
@@ -912,15 +912,15 @@ Files: applets/analog-clock/contents/ui/analogclock.qml
        shell/strutmanager.h
        shell/userfeedback.cpp
        shell/userfeedback.h
-       startkde/kcheckrunning/kcheckrunning.cpp
-       startkde/kcheckrunning/kcheckrunning.h
-       startkde/plasmaautostart/plasmaautostart.cpp
-       startkde/plasmaautostart/plasmaautostart.h
-       startkde/lingmo-session/lingmo-autostart-list/main.cpp
-       startkde/startplasma.cpp
-       startkde/startplasma.h
-       startkde/startlingmo-wayland.cpp
-       startkde/startlingmo-x11.cpp
+       startshell/kcheckrunning/kcheckrunning.cpp
+       startshell/kcheckrunning/kcheckrunning.h
+       startshell/plasmaautostart/plasmaautostart.cpp
+       startshell/plasmaautostart/plasmaautostart.h
+       startshell/lingmo-session/lingmo-autostart-list/main.cpp
+       startshell/startplasma.cpp
+       startshell/startplasma.h
+       startshell/startlingmo-wayland.cpp
+       startshell/startlingmo-x11.cpp
        wallpapers/image/plugin/imageplugin.cpp
        wallpapers/image/plugin/imageplugin.h
 Copyright: 2006-2013, Aaron Seigo <aseigo@kde.org>
@@ -1510,9 +1510,9 @@ Files: appiumtests/digitalclocktest.py
        logout-greeter/shutdowndlg.cpp
        logout-greeter/shutdowndlg.h
        logout-greeter/tests/main.cpp
-       startkde/lingmo-session/startup.cpp
-       startkde/lingmo-session/startup.h
-       startkde/lingmo-shutdown/shutdown.h
+       startshell/lingmo-session/startup.cpp
+       startshell/lingmo-session/startup.h
+       startshell/lingmo-shutdown/shutdown.h
 Copyright: 2022, Bharadwaj Raju <bharadwaj.raju777@protonmail.com>
            2011-2012, Cédric Bellegarde <gnumdk@gmail.com>
            2014-2018, David Edmundson <davidedmundson@kde.org>

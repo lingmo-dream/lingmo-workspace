@@ -221,7 +221,7 @@
 > são copiados ou terão ligações simbólicas para a pasta <filename class="directory"
 >$HOME/.config/lingmo-workspace/env</filename
 > e serão executados durante o arranque do &kde; (o programa <filename
->startkde</filename
+>startshell</filename
 > carregá-los-á para os programas aqui). </para>
 <note
 ><para

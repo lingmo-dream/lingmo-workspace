@@ -216,7 +216,7 @@
 > yang disalin atau di-symlink di <filename class="directory"
 >$HOME/.config/lingmo-workspace/env</filename
 > dan tersumber selagi pemulaian &plasma; (skrip <filename
->startkde</filename
+>startshell</filename
 > akan menampakan skrip di sini). </para>
 <note
 ><para

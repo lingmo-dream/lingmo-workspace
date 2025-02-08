@@ -9,7 +9,7 @@
 */
 
 #include "lookandfeelmanager.h"
-#include "../../startkde/plasmaautostart/plasmaautostart.h"
+#include "../../startshell/plasmaautostart/plasmaautostart.h"
 #include "../colors/colorsapplicator.h"
 #include "config-kcm.h"
 #include "lookandfeeldata.h"

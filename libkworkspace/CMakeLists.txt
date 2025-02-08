@@ -21,8 +21,8 @@ qt_add_dbus_interface(kworkspace_LIB_SRCS kf5_org.kde.KLauncher.xml klauncher_in
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/kf5_org.freedesktop.ScreenSaver.xml screenlocker_interface )
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/org.kde.screensaver.xml kscreenlocker_interface )
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/ksmserver/org.kde.LogoutPrompt.xml logoutprompt_interface)
-qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startkde/lingmo-session/org.kde.Startup.xml startup_interface)
-qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startkde/lingmo-shutdown/org.kde.Shutdown.xml shutdown_interface)
+qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startshell/lingmo-session/org.kde.Startup.xml startup_interface)
+qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startshell/lingmo-shutdown/org.kde.Shutdown.xml shutdown_interface)
 
 set_source_files_properties("${CMAKE_SOURCE_DIR}/data/interfaces/org.freedesktop.login1.Seat.xml"
                             "${CMAKE_SOURCE_DIR}/data/interfaces/org.freedesktop.login1.Session.xml"

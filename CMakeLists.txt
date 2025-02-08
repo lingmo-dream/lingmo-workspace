@@ -379,7 +379,7 @@ add_subdirectory(logout-greeter)
 add_subdirectory(ksplash)
 add_subdirectory(systemmonitor)
 add_subdirectory(statusnotifierwatcher)
-add_subdirectory(startkde)
+add_subdirectory(startshell)
 add_subdirectory(themes)
 
 add_subdirectory(kcms)

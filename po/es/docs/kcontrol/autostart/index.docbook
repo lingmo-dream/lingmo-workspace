@@ -230,7 +230,7 @@
 > se copian o se enlazan en <filename class="directory"
 >$HOME/.config/lingmo-workspace/env</filename
 > y se inician durante el inicio de &plasma; (el script <filename
->startkde</filename
+>startshell</filename
 > buscará aquí los scripts). </para>
 <note
 ><para

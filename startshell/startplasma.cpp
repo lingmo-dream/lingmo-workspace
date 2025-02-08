@@ -545,7 +545,7 @@ bool hasSystemdService(const QString &serviceName)
 
 bool useSystemdBoot()
 {
-    auto config = KSharedConfig::openConfig(QStringLiteral("startkderc"), KConfig::NoGlobals);
+    auto config = KSharedConfig::openConfig(QStringLiteral("startshellrc"), KConfig::NoGlobals);
     const QString configValue = config->group(QStringLiteral("General")).readEntry("systemdBoot", QStringLiteral("true")).toLower();
 
     if (configValue == QLatin1String("false")) {
@@ -692,7 +692,7 @@ bool startPlasmaSession(bool wayland)
         QObject::connect(startPlasmaSession.get(), &QProcess::finished, &e, [&rc](int exitCode, QProcess::ExitStatus) {
             if (exitCode == 255) {
                 // Startup error
-                messageBox(QStringLiteral("startkde: Could not start plasma_session. Check your installation.\n"));
+                messageBox(QStringLiteral("startshell: Could not start plasma_session. Check your installation.\n"));
                 rc = false;
             }
         });
@@ -710,7 +710,7 @@ bool startPlasmaSession(bool wayland)
         QDBusReply<QDBusObjectPath> reply = QDBusConnection::sessionBus().call(msg);
         if (!reply.isValid()) {
             qCWarning(PLASMA_STARTUP) << "Could not start systemd managed Plasma session:" << reply.error().name() << reply.error().message();
-            messageBox(QStringLiteral("startkde: Could not start Plasma session.\n"));
+            messageBox(QStringLiteral("startshell: Could not start Plasma session.\n"));
             rc = false;
         } else {
             playStartupSound();
@@ -728,7 +728,7 @@ bool startPlasmaSession(bool wayland)
 
 void waitForKonqi()
 {
-    const KConfig cfg(QStringLiteral("startkderc"));
+    const KConfig cfg(QStringLiteral("startshellrc"));
     const KConfigGroup grp = cfg.group("WaitForDrKonqi");
     bool wait_drkonqi = grp.readEntry("Enabled", true);
     if (wait_drkonqi) {
@@ -754,7 +754,7 @@ void waitForKonqi()
 
 void playStartupSound()
 {
-    KNotifyConfig notifyConfig(QStringLiteral("plasma_workspace"), QList<QPair<QString, QString>>(), QStringLiteral("startkde"));
+    KNotifyConfig notifyConfig(QStringLiteral("plasma_workspace"), QList<QPair<QString, QString>>(), QStringLiteral("startshell"));
     const QString action = notifyConfig.readEntry(QStringLiteral("Action"));
     if (action.isEmpty() || !action.split(QLatin1Char('|')).contains(QLatin1String("Sound"))) {
         // no startup sound configured

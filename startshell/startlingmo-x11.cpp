@@ -60,7 +60,7 @@ int main(int argc, char **argv)
 
     runEnvironmentScripts();
 
-    out << "startkde: Starting up...\n";
+    out << "startshell: Starting up...\n";
 
     setupPlasmaEnvironment();
     setupX11();
@@ -85,14 +85,14 @@ int main(int argc, char **argv)
     // It is not called after shutdown/restart
     waitForKonqi();
 
-    out << "startkde: Shutting down...\n";
+    out << "startshell: Shutting down...\n";
 
     // Keep for KF5; remove in KF6 (KInit will be gone then)
     runSync(QStringLiteral("kdeinit5_shutdown"), {});
 
     cleanupPlasmaEnvironment(oldSystemdEnvironment);
 
-    out << "startkde: Done.\n";
+    out << "startshell: Done.\n";
 
     return 0;
 }

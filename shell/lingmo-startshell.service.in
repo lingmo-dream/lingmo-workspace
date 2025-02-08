@@ -8,10 +8,8 @@ StartLimitBurst=3
 [Service]
 ExecStart=lingmo-session
 Restart=no
-Type=dbus
-BusName=org.lingmo.lingmoshell
 Slice=session.slice
-TimeoutSec=40sec
+TimeoutSec=infinity
 
 [Install]
 WantedBy=lingmo-core.target

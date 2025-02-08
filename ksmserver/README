@@ -34,13 +34,13 @@ Requesting a shutdown
 Starting the server
 -------------------
 
-The server is usually started from the 'startkde' script. It supports the following options:
+The server is usually started from the 'startshell' script. It supports the following options:
 
   -r, --restore             Restores the previous session if available
   -w, --windowmanager <wm>  Starts 'wm' in case no other window manager is
                             participating in the session. Default is 'kwin'
 
-The default 'startkde' launches 'ksmserver --restore'.  The
+The default 'startshell' launches 'ksmserver --restore'.  The
 'windowmanager' option is useful for users that prefer a window
 manager other than kwin. Since the window manager has to participate
 in the session (it has to remember window positions and states), it is
@@ -57,13 +57,13 @@ KDE startup sequence
 --------------------
 
 Ksmserver controls the second part of the KDE startup sequence,
-after it gets control from the startkde script, which controls
+after it gets control from the startshell script, which controls
 the first part of the startup sequence. All code related to startup
 should be in startup.cpp and going down in that source file should
 follow the startup order (but note that this is just a documentation
 which may get outdated, so in case of doubts the source wins ;) ).
 
-The startkde scripts already launches kdeinit, which in turns launches
+The startshell scripts already launches kdeinit, which in turns launches
 KDE daemons like dbus daemon, klauncher and kded. Kded loads autoloaded
 kded modules, i.e. those that have X-KDE-Kded-autoload=true in .desktop
 files. The exact way autoloading works is controlled by X-KDE-Kded-phase=,
@@ -79,7 +79,7 @@ Startkde also launches kcminit, which performs initialization done by kcontrol
 modules. There are two kcminit phases, 0, 1, controlled
 by X-KDE-Init-Phase= in the .desktop file, which defaults to 1. Phase 0 kcminit
 modules should be only those that really need to be run early in the startup
-process (and those should probably actually use kstartupconfig in startkde
+process (and those should probably actually use kstartupconfig in startshell
 to be done even before kdeinit and daemons). After executing phase 0
 modules kcminit returns and waits.
 
@@ -103,7 +103,7 @@ i.e. launching all applications that were running during last session
 saving (usually logout).
 
 By this time KDE session is considered to be more or less ready and
-ksmserver does the knotify startkde event (i.e. plays the login sound).
+ksmserver does the knotify startshell event (i.e. plays the login sound).
 It also tells klauncher to perform autostart phase 2, kded to load all
 remaining autoload (i.e. kded phase 2) modules, and it itself executes
 the user Autostart folder.

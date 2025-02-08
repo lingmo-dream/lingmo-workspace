@@ -160,7 +160,7 @@ int main(int argc, char *argv[])
     close(ready[0]);
 
     const QString executableName = QString::fromUtf8(argv[0]);
-    startup = executableName.endsWith(QLatin1String("kcminit_startup")); // started from startkde?
+    startup = executableName.endsWith(QLatin1String("kcminit_startup")); // started from startshell?
 
     KWorkSpace::detectPlatform(argc, argv);
     QGuiApplication::setDesktopSettingsAware(false);

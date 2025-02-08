@@ -331,7 +331,7 @@ KDE3.1 -> KDE3.2
    configuring StarOffice - as this requires some other files to be modified, which won't be possible if SO has been installed
    by root.
 
-   ...Also to accomplish this, some changes are needed to 'startkde' - see file README.startkde
+   ...Also to accomplish this, some changes are needed to 'startshell' - see file README.startshell
 
 11. Because of the above, when started as non-root, KFontinst will create Type1 and TrueType sub-folders in
     $KDEHOME/share/fonts - if they do not already exist.

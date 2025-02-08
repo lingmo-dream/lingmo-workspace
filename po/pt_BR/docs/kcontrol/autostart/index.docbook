@@ -235,7 +235,7 @@
 > são copiados ou terão ligações simbólicas para a pasta <filename class="directory"
 >$HOME/.config/lingmo-workspace/env</filename
 > e serão executados durante o inicialização do &plasma; (o programa <filename
->startkde</filename
+>startshell</filename
 > irá procurar por programas nesta pasta). </para>
 <note
 ><para

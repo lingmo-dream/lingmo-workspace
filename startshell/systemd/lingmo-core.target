@@ -1,6 +1,6 @@
 [Unit]
 Description=Lingmo OS Workspace Core
-Wants=lingmo-plasmashell.service graphical-session-pre.target
+Wants=lingmo-startshell.service graphical-session-pre.target
 Requires=lingmo-ksmserver.service
 After=graphical-session-pre.target lingmo-kwin_wayland.service
 RefuseManualStart=yes

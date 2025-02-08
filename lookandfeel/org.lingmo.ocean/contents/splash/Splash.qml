@@ -36,7 +36,7 @@ Image {
             source: "images/logo.svg"
 
             sourceSize.width: 254
-            sourceSize.height: 50
+            sourceSize.height: 37
         }
 
         Image {

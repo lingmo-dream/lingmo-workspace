@@ -15,7 +15,7 @@ Theme format:
 =============
 
 This is a description of what is shared between the implementations (as needed
-by the configuration module and startkde code deciding which implementation to use).
+by the configuration module and startshell code deciding which implementation to use).
 Implementations may have their own additions.
 
 Themes are stored in $KDEDIRS/share/apps/ksplash/Themes/ in a directory specifying
