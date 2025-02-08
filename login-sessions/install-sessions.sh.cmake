@@ -7,8 +7,8 @@
 set -e
 
 # Make built-from-source sessions appear in login screen
-sudo install -D @CMAKE_CURRENT_BINARY_DIR@/plasmax11-dev.desktop /usr/share/xsessions/
-sudo install -D @CMAKE_CURRENT_BINARY_DIR@/plasmawayland-dev.desktop /usr/share/wayland-sessions/
+sudo install -D @CMAKE_CURRENT_BINARY_DIR@/lingmox11-dev.desktop /usr/share/xsessions/
+# sudo install -D @CMAKE_CURRENT_BINARY_DIR@/plasmawayland-dev.desktop /usr/share/wayland-sessions/
 install @CMAKE_BINARY_DIR@/prefix.sh @CMAKE_INSTALL_FULL_LIBEXECDIR@/lingmo-dev-prefix.sh
 install @CMAKE_CURRENT_BINARY_DIR@/startlingmo-dev.sh @CMAKE_INSTALL_FULL_LIBEXECDIR@
 
