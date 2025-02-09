@@ -1,3 +1,9 @@
+lingmo-workspace (5:3.0.0-2~lingmo3) helium; urgency=medium
+
+  * Release for Lingmo OS.
+
+ -- Lingmo OS Team <team@lingmo.org>  Sun, 09 Feb 2025 19:00:00 +0800
+
 lingmo-workspace (4:5.30.0-1~lingmo3) helium; urgency=medium
 
   * Release for Lingmo OS.
