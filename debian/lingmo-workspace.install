@@ -28,6 +28,7 @@ usr/bin/lingmo-localegen-helper
 usr/bin/plasma_session
 usr/bin/plasma_waitforname
 usr/bin/plasmashell
+usr/bin/lingmo-poweroff
 usr/bin/plasmawindowed
 usr/bin/startlingmo-x11
 usr/bin/systemmonitor
