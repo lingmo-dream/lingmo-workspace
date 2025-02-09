@@ -41,7 +41,7 @@ target_link_libraries(startlingmo-x11 PRIVATE
 # )
 
 add_subdirectory(lingmo-session)
-# add_subdirectory(lingmo-shutdown)
+add_subdirectory(lingmo-poweroff)
 
 #FIXME: reconsider, looks fishy
 if(NOT CMAKE_INSTALL_PREFIX STREQUAL "/usr")

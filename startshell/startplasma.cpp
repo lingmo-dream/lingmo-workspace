@@ -652,7 +652,7 @@ bool startPlasmaSession(bool wayland)
     serviceWatcher.setConnection(QDBusConnection::sessionBus());
 
     // We want to exit when both ksmserver and lingmo-session-shutdown have finished
-    // This also closes if ksmserver crashes unexpectedly, as in those cases lingmo-shutdown is not running
+    // This also closes if ksmserver crashes unexpectedly, as in those cases lingmo-poweroff is not running
     if (wayland) {
         serviceWatcher.addWatchedService(QStringLiteral("org.kde.KWinWrapper"));
     } else {

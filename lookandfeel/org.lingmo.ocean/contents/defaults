@@ -4,14 +4,14 @@ widgetStyle=Ocean
 [kdeglobals][General]
 ColorScheme=OceanLight
 
-[kdeglobals][Icons]
-Theme=breeze
+; [kdeglobals][Icons]
+; Theme=breeze
 
-[plasmarc][Theme]
-name=default
+; [plasmarc][Theme]
+; name=default
 
-[kcminputrc][Mouse]
-cursorTheme=lingmo-light
+; [kcminputrc][Mouse]
+; cursorTheme=lingmo-light
 
 [KSplash]
-Theme=org.lingmo.Ocean
+Theme=org.lingmo.ocean

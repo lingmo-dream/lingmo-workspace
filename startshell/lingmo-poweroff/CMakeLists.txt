@@ -10,15 +10,15 @@ qt_add_dbus_interface(plasma_shutdown_SRCS org.kde.Shutdown.xml shutdown_interfa
 qt_add_dbus_interface( plasma_shutdown_SRCS ../../ksmserver/org.kde.KSMServerInterface.xml ksmserver_interface )
 qt_add_dbus_interface( plasma_shutdown_SRCS ../../ksmserver/org.kde.KWin.Session.xml kwin_interface )
 
-add_executable(lingmo-shutdown ${plasma_shutdown_SRCS})
+add_executable(lingmo-poweroff ${plasma_shutdown_SRCS})
 
-target_link_libraries(lingmo-shutdown
+target_link_libraries(lingmo-poweroff
     Qt::Core
     Qt::DBus
     KF5::ConfigCore
     PW::KWorkspace
 )
 
-kdbusaddons_generate_dbus_service_file(lingmo-shutdown org.kde.Shutdown ${KDE_INSTALL_FULL_BINDIR})
-# install(TARGETS lingmo-shutdown ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+kdbusaddons_generate_dbus_service_file(lingmo-poweroff org.kde.Shutdown ${KDE_INSTALL_FULL_BINDIR})
+install(TARGETS lingmo-poweroff ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 

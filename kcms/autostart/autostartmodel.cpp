@@ -37,7 +37,7 @@
 
 // Then we have Plasma-specific locations which run scripts
 // .config/autostart-scripts which has scripts executed by plasma_session (now migrated to .desktop files)
-// .config/lingmo-workspace/shutdown which has scripts executed by lingmo-shutdown
+// .config/lingmo-workspace/shutdown which has scripts executed by lingmo-poweroff
 // .config/lingmo-workspace/env which has scripts executed by startplasma
 
 // in the case of pre-startup they have to end in .sh

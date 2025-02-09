@@ -25,7 +25,7 @@ qt_add_dbus_interface( ksmserver_SRCS org.kde.LogoutPrompt.xml logoutprompt_inte
 qt_add_dbus_interface( ksmserver_SRCS org.kde.KWin.Session.xml kwinsession_interface)
 
 qt_add_dbus_interface( ksmserver_SRCS ../startshell/lingmo-session/org.kde.Startup.xml startup_interface )
-qt_add_dbus_interface( ksmserver_SRCS ../startshell/lingmo-shutdown/org.kde.Shutdown.xml shutdown_interface )
+qt_add_dbus_interface( ksmserver_SRCS ../startshell/lingmo-poweroff/org.kde.Shutdown.xml shutdown_interface )
 
 add_executable(ksmserver ${ksmserver_SRCS})
 

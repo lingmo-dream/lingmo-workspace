@@ -525,7 +525,7 @@ Files: applets/systemtray/statusnotifieritemjob.cpp
        startshell/lingmo-session/sessiontrack.h
        startshell/lingmo-session/signalhandler.cpp
        startshell/lingmo-session/signalhandler.h
-       startshell/lingmo-shutdown/main.cpp
+       startshell/lingmo-poweroff/main.cpp
        startshell/waitforname/main.cpp
        startshell/waitforname/waiter.cpp
        startshell/waitforname/waiter.h
@@ -1513,7 +1513,7 @@ Files: appiumtests/digitalclocktest.py
        logout-greeter/tests/main.cpp
        startshell/lingmo-session/startup.cpp
        startshell/lingmo-session/startup.h
-       startshell/lingmo-shutdown/shutdown.h
+       startshell/lingmo-poweroff/shutdown.h
 Copyright: 2022, Bharadwaj Raju <bharadwaj.raju777@protonmail.com>
            2011-2012, Cédric Bellegarde <gnumdk@gmail.com>
            2014-2018, David Edmundson <davidedmundson@kde.org>
