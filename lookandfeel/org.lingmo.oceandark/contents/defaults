@@ -1,17 +1,8 @@
-[kdeglobals][KDE]
-widgetStyle=Ocean
-
 [kdeglobals][General]
 ColorScheme=OceanDark
 
-[kdeglobals][Icons]
-Theme=Crule-dark
-
 [plasmarc][Theme]
 name=default
-
-[kcminputrc][Mouse]
-cursorTheme=lingmo-dark
 
 [kwinrc][WindowSwitcher]
 LayoutName=org.lingmo.ocean.desktop
@@ -20,4 +11,4 @@ LayoutName=org.lingmo.ocean.desktop
 LayoutName=org.lingmo.ocean.desktop
 
 [KSplash]
-Theme=org.lingmo.Ocean
+Theme=org.lingmo.ocean

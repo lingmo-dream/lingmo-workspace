@@ -1,76 +1,95 @@
-import QtQuick 2.1
+import QtQuick.Window 2.2
+import QtQuick 2.5
+import QtGraphicalEffects 1.0
+import LingmoUI 1.0 as LingmoUI
+import Lingmo.System 1.0 as System
 
-Image {
+Rectangle {
     id: root
-    source: "images/default.jpg"
-
+    color: "#313131"
     property int stage
-
     onStageChanged: {
         if (stage == 1) {
             introAnimation.running = true
         }
     }
+
+    System.Wallpaper {
+        id: wallpaper
+    }
+
     Image {
-        id: topRect
-        anchors.horizontalCenter: parent.horizontalCenter
-        y: root.height
-        source: "images/rectangle.png"
-        Image {
-            source: "images/logo.svg"
-            anchors.centerIn: parent
+        id: bg
+        source: "/etc/system/wallpaper/img.jpg"
+        fillMode: Image.PreserveAspectCrop
+        anchors.fill: parent
+    }
+
+    FastBlur {
+        id: wallpaperBlur
+        anchors.fill: bg
+        radius: 64
+        source: bg
+        cached: true
+        visible: true
+    }
+
+    Item {
+        id: content
+        anchors.fill: parent
+        opacity: 0
+        TextMetrics {
+            id: units
+            text: "M"
+            property int gridUnit: boundingRect.height
+            property int largeSpacing: units.gridUnit
+            property int smallSpacing: Math.max(2, gridUnit/4)
         }
+
         Rectangle {
-            radius: 1
-            color: "transparent"
-            anchors { 
-                bottom: parent.bottom
-                bottomMargin: 50
-                horizontalCenter: parent.horizontalCenter
+            id: imageSource
+            width:  300
+            height: 300
+            color:  "transparent"
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            clip: true
+
+            Image {
+                id: logo
+                //match SDDM/lockscreen avatar positioning
+                property real size: units.gridUnit * 8
+                anchors.centerIn: parent
+                source: "images/logo.svg"
+                sourceSize.width: 300
             }
-            height: 4
-            width: height*32
-            Rectangle {
-                radius: 1
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    bottom: parent.bottom
-                }
-                width: (parent.width / 6) * (stage - 1)
-                color: "#FFFFFF"
-                Behavior on width { 
-                    PropertyAnimation {
-                        duration: 250
-                        easing.type: Easing.InOutQuad
-                    }
+
+            Image {
+                id: busyIndicator
+                //in the middle of the remaining space
+                y: parent.height - (parent.height - logo.y) / 2
+                anchors.horizontalCenter: parent.horizontalCenter
+                source: "images/busy.svg"
+                sourceSize.height: units.gridUnit * 2
+                sourceSize.width: units.gridUnit * 2
+                RotationAnimator on rotation {
+                    id: rotationAnimator
+                    from: 0
+                    to: 360
+                    duration: 800
+                    loops: Animation.Infinite
                 }
             }
         }
     }
 
-    SequentialAnimation {
+    OpacityAnimator {
         id: introAnimation
         running: false
-
-        ParallelAnimation {
-            PropertyAnimation {
-                property: "y"
-                target: topRect
-                to: root.height / 3
-                duration: 1000
-                easing.type: Easing.InOutBack
-                easing.overshoot: 1.0
-            }
-
-            PropertyAnimation {
-                property: "y"
-                target: bottomRect
-                to: 2 * (root.height / 3) - bottomRect.height
-                duration: 1000
-                easing.type: Easing.InOutBack
-                easing.overshoot: 1.0
-            }
-        }
+        target: content
+        from: 0
+        to: 1
+        duration: 1000
+        easing.type: Easing.InOutQuad
     }
 }

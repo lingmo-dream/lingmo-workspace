@@ -95,24 +95,24 @@ KCM.ScrollViewKCM {
 
             Kirigami.Theme.colorSet: highlighted ? Kirigami.Theme.Selection : Kirigami.Theme.View
 
-            leading: Rectangle {
-                width: height
+            // leading: Rectangle {
+            //     width: height
 
-                color: "transparent"
-                border.color: Kirigami.ColorUtils.adjustColor(Kirigami.Theme.textColor, {alpha: 0.4*255})
-                border.width: 1
-                radius: height/2
+            //     color: "transparent"
+            //     border.color: Kirigami.ColorUtils.adjustColor(Kirigami.Theme.textColor, {alpha: 0.4*255})
+            //     border.width: 1
+            //     radius: height/2
 
-                Kirigami.Avatar {
-                    source: model.decoration + '?' + avatarVersion // force reload after saving
-                    cache: false // avoid caching
-                    name: model.displayPrimaryName
-                    anchors {
-                        fill: parent
-                        margins: 1
-                    }
-                }
-            }
+            //     Kirigami.Avatar {
+            //         source: model.decoration + '?' + avatarVersion // force reload after saving
+            //         cache: false // avoid caching
+            //         name: model.displayPrimaryName
+            //         anchors {
+            //             fill: parent
+            //             margins: 1
+            //         }
+            //     }
+            // }
         }
     }
 

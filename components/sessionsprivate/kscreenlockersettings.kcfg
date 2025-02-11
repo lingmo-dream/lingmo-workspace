@@ -6,13 +6,13 @@
   <kcfgfile name="kscreenlockerrc" />
   <group name="Daemon">
     <entry key="Autolock" type="Bool">
-      <default>true</default>
+      <default>false</default>
       <label>Screen lock enabled</label>
       <whatsthis>Sets whether the screen will be locked after the specified time.</whatsthis>
     </entry>
     <entry key="Timeout" type="Int">
-      <default>5</default>
-      <min>1</min>
+      <default>0</default>
+      <min>0</min>
       <label>Screen saver timeout</label>
       <whatsthis>Sets the minutes after which the screen is locked.</whatsthis>
     </entry>
