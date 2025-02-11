@@ -7,4 +7,4 @@ After=lingmo-kwin_wayland.service
 ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/ksplashqml
 Type=oneshot
 Slice=background.slice
-TimeoutSec=20sec
+TimeoutSec=5sec
