@@ -19,7 +19,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libkworkspace\")
 
 qt_add_dbus_interface(kworkspace_LIB_SRCS kf5_org.kde.KLauncher.xml klauncher_interface)
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/kf5_org.freedesktop.ScreenSaver.xml screenlocker_interface )
-# qt_add_dbus_interface(kworkspace_LIB_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/org.kde.screensaver.xml kscreenlocker_interface )
+qt_add_dbus_interface(kworkspace_LIB_SRCS ${KSCREENLOCKER_DBUS_INTERFACES_DIR}/org.kde.screensaver.xml kscreenlocker_interface )
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/ksmserver/org.kde.LogoutPrompt.xml logoutprompt_interface)
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startshell/lingmo-session/org.kde.Startup.xml startup_interface)
 qt_add_dbus_interface(kworkspace_LIB_SRCS ${lingmo-workspace_SOURCE_DIR}/startshell/lingmo-poweroff/org.kde.Shutdown.xml shutdown_interface)
