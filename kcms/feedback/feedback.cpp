@@ -28,7 +28,7 @@ struct Information {
     QString kuserfeedbackComponent;
 };
 static QHash<QString, Information> s_programs = {
-    {"plasmashell", {"plasmashell", "plasmashell"}},
+    {"lingmo", {"lingmo", "lingmo"}},
     {"lingmo-discover", {"plasmadiscover", "discover"}},
 };
 

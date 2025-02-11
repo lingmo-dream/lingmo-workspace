@@ -41,14 +41,14 @@ SimpleKCM {
         // us to use the HoverHandler boilerplate for
         // proper link handling
         TextEdit {
-            Kirigami.FormData.label: i18n("Plasma:")
+            Kirigami.FormData.label: i18n("Lingmo OS:")
             Layout.fillWidth: true
             Layout.topMargin: Kirigami.Units.gridUnit
             Layout.leftMargin: Kirigami.Units.gridUnit
             Layout.rightMargin: Kirigami.Units.gridUnit
             Layout.alignment: Qt.AlignHCenter
             wrapMode: Text.WordWrap
-            text: xi18nc("@info", "You can help KDE improve Plasma by contributing information on how you use it, so we can focus on things that matter to you.<nl/><nl/>Contributing this information is optional and entirely anonymous. We never collect your personal data, files you use, websites you visit, or information that could identify you.<nl/><nl/>You can read about <link url='https://kde.org/privacypolicy-apps.php'>our privacy policy here.</link>")
+            text: xi18nc("@info", "You can help Lingmo OS by contributing information on how you use it, so we can focus on things that matter to you.<nl/><nl/>Contributing this information is optional and entirely anonymous. We never collect your personal data, files you use, websites you visit, or information that could identify you.<nl/><nl/>You can read about <link url='https://kde.org/privacypolicy-apps.php'>our privacy policy here.</link>")
             textFormat: TextEdit.RichText
             readOnly: true
 
@@ -74,7 +74,7 @@ SimpleKCM {
             enabled: kcm.feedbackEnabled
             QQC2.Slider {
                 id: statisticsModeSlider
-                Kirigami.FormData.label: i18n("Plasma:")
+                Kirigami.FormData.label: i18n("Lingmo OS:")
                 readonly property var currentMode: modeOptions[value]
                 Layout.fillWidth: true
                 Layout.maximumWidth: Kirigami.Units.gridUnit * 22
@@ -109,7 +109,7 @@ SimpleKCM {
 
             UserFeedback.FeedbackConfigUiController {
                 id: feedbackController
-                applicationName: i18n("Plasma")
+                applicationName: i18n("Lingmo OS")
             }
 
             Kirigami.Heading {

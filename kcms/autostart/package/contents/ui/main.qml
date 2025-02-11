@@ -11,6 +11,7 @@ import org.kde.kirigami 2.13 as Kirigami
 import QtQuick.Dialogs 1.3
 import org.kde.kcm 1.2 as KCM
 import org.kde.plasma.kcm.autostart 1.0
+import LingmoUI 1.0 as LingmoUI
 
 KCM.ScrollViewKCM {
 

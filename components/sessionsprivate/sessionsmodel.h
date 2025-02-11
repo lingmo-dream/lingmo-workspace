@@ -95,7 +95,7 @@ private:
 
     QVector<SessionEntry> m_data;
 
-    bool m_shouldLock = true;
+    bool m_shouldLock = false;
 
     int m_pendingVt = 0;
     bool m_pendingReserve = false;

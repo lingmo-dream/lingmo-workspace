@@ -30,7 +30,7 @@
         "Name[uk]": "Темна Ocean",
         "Name[vi]": "Ocean Tối",
         "Name[x-test]": "Ocean Darkxx",
-        "Name[zh_CN]": "Ocean 海洋浅色",
+        "Name[zh_CN]": "Ocean 海洋深色",
         "Name[zh_TW]": "Ocean Dark",
         "ServiceTypes": [
             "Plasma/LookAndFeel"
