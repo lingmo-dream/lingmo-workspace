@@ -7,5 +7,4 @@ After=lingmo-kwin_wayland.service
 ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/ksplashqml
 Type=oneshot
 Slice=background.slice
-TimeoutSec=40sec
-ExecStop=/usr/bin/pkill -f lingmo-statusbar
+TimeoutSec=20sec

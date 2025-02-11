@@ -114,7 +114,7 @@ void SplashApp::setStage(const QString &stage)
 void SplashApp::setStage(int stage)
 {
     m_stage = stage;
-    if (m_stage == 6) {
+    if (m_stage == 5) {
         QGuiApplication::exit(EXIT_SUCCESS);
     }
     foreach (SplashWindow *w, m_windows) {
