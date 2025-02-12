@@ -198,11 +198,12 @@ void SessionManagement::hibernate()
 
 void SessionManagement::lock()
 {
-    if (!canLock()) {
-        return;
-    }
-    OrgFreedesktopScreenSaverInterface iface(QStringLiteral("org.freedesktop.ScreenSaver"), QStringLiteral("/ScreenSaver"), QDBusConnection::sessionBus());
-    iface.Lock();
+    // if (!canLock()) {
+    //     return;
+    // }
+    // OrgFreedesktopScreenSaverInterface iface(QStringLiteral("org.freedesktop.ScreenSaver"), QStringLiteral("/ScreenSaver"), QDBusConnection::sessionBus());
+    // iface.Lock();
+    return;
 }
 
 void SessionManagement::switchUser()
