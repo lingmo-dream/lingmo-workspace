@@ -28,6 +28,7 @@ public Q_SLOTS:
 protected:
     void timerEvent(QTimerEvent *event) override;
     void setStage(int stage);
+    void deBug();
 
 private:
     void setupWaylandIntegration();
