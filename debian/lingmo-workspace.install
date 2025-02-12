@@ -33,7 +33,7 @@ usr/bin/plasmawindowed
 usr/bin/startlingmo-x11
 usr/bin/systemmonitor
 usr/bin/xembedsniproxy
-usr/local/bin/check_start.sh
+usr/bin/check_start.sh
 usr/lib/*/kconf_update_bin/krunnerglobalshortcuts
 usr/lib/*/kconf_update_bin/krunnerhistory
 usr/lib/*/kconf_update_bin/plasmashell-5.27-use-panel-thickness-in-default-group
