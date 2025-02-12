@@ -6,7 +6,7 @@ RETRIES=50
 INTERVAL=0.5
 
 for i in $(seq 1 $RETRIES); do
-    if pgrep -x "lingmo-dock" > /dev/null; then
+    if pgrep -f "lingmo-filemanager" > /dev/null; then
         exit 0
     fi
     sleep $INTERVAL
