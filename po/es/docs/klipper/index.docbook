@@ -572,7 +572,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > en la línea de órdenes se sustituye por los contenidos del portapapeles, &eg;, si su definición de orden es <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -580,7 +580,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfile</filename
 >, se ejecutará la orden <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfile</filename
 ></userinput

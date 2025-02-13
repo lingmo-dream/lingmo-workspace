@@ -503,7 +503,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > wordt vervangen door de inhoud van het klembord. Als u bijvoorbeeld als commando <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -511,7 +511,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/toma/tekstbestand</filename
 >, dan zal uiteindelijk het commando <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/toma/tekstbestand</filename
 ></userinput

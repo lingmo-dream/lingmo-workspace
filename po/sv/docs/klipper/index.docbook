@@ -515,7 +515,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > på kommandoraden ersätts med klippbordets innehåll, t.ex. om din kommandodefinition är <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -523,7 +523,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfil</filename
 >, körs kommandot <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfil</filename
 ></userinput

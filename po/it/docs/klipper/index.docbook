@@ -531,7 +531,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > è sostituito con i contenuti degli appunti, &eg; se la definizione del comando è <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -539,7 +539,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/mario/fileditesto</filename
 >, sarà avviato il comando <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/mario/fileditesto</filename
 ></userinput

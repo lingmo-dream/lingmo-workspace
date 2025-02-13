@@ -541,7 +541,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > di dalam baris perintah telah digantikan dengan konten papan klip, &eg; jika definisi perintahmu adalah  <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -549,7 +549,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfile</filename
 >, maka perintah <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfile</filename
 ></userinput

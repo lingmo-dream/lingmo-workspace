@@ -541,7 +541,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > na linha de comandos é substituído pelo conteúdo da área de transferência, &eg; se a sua definição do comando for <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -549,7 +549,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/ze/ficheirotexto</filename
 >, o comando <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/ze/ficheirotexto</filename
 ></userinput

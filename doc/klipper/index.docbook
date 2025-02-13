@@ -367,9 +367,9 @@ in an in-place text editing box. Double-clicking on a command allows you to edit
 
 <para>Note that <token>%s</token> in the command line is replaced with
 the clipboard contents, &eg; if your command definition is
-<userinput><command>kwrite</command> <token>%s</token></userinput> and
+<userinput><command>notepad</command> <token>%s</token></userinput> and
 your clipboard contents are <filename>/home/phil/textfile</filename>,
-the command <userinput><command>kwrite</command>
+the command <userinput><command>notepad</command>
 <filename>/home/phil/textfile</filename></userinput> will be run. To
 include <token>%s</token> in the command line, escape it with a
 backslash, as so: <userinput>\%s</userinput>.</para>

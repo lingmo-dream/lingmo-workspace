@@ -515,7 +515,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > у рядку команди буде замінено вмістом кишені, наприклад, якщо ви визначили команду <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -523,7 +523,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfile</filename
 >, буде виконано команду <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfile</filename
 ></userinput

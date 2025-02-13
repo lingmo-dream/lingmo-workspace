@@ -501,7 +501,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > en la línia d'ordres és substituïda pel contingut del porta-retalls, &pex;, si la vostra definició d'ordre és <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -509,7 +509,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/jordi/fitxer_text</filename
 >, s'executarà l'ordre <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/jordi/fitxer_text</filename
 ></userinput

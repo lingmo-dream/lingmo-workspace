@@ -517,7 +517,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 >'nin pano içeriğiyle değiştirildiğini not edin; &eg;, komut tanımınız <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -525,7 +525,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/umay/metindosyası</filename
 > ise <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/umay/metindosyası</filename
 ></userinput

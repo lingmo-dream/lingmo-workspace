@@ -483,7 +483,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > auf der Befehlszeile wird durch den Inhalt der Zwischenablage ersetzt. Ist zum Beispiel der Befehl mit <userinput
 ><command
->kwrite <token
+>notepad <token
 >%s</token
 ></command
 ></userinput
@@ -491,7 +491,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfile</filename
 >, wird der Befehl <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfile</filename
 ></userinput

@@ -531,7 +531,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >%s</token
 > в командной строке заменяется содержимым буфера обмена. Например, если определение команды выглядит как <userinput
 ><command
->kwrite</command
+>notepad</command
 > <token
 >%s</token
 ></userinput
@@ -539,7 +539,7 @@ selected, the clipboard functions in the &UNIX; mode; if not, the
 >/home/phil/textfile</filename
 >, будет выполнена команда <userinput
 ><command
->kwrite</command
+>notepad</command
 > <filename
 >/home/phil/textfile</filename
 ></userinput
